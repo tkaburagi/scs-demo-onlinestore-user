@@ -1,0 +1,12 @@
+---
+applications:
+- name: scs-demo-onlinestore-user
+  memory: 516M
+  instances: 1
+  path: ./target/demo-0.0.1-SNAPSHOT.jar
+  services:
+   - springbox-service-registry
+   - mysql
+  env:
+   SPRING_PROFILES_ACTIVE: cloud 
+   
